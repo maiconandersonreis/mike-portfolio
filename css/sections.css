@@ -358,13 +358,10 @@ a.contact-link:hover {
   color: var(--color-accent);
 }
 
-.contact-link--pending {
-  border-style: dashed;
-  background: transparent;
-  color: var(--color-muted);
-}
-
-.contact-link--pending .icon {
+.contact-link__meta {
+  margin-left: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
   color: var(--color-muted);
 }
 

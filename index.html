@@ -63,6 +63,7 @@
           <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
           <li><a href="#experiencia" data-i18n="nav.experience">Experiência</a></li>
           <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
+          <li><a href="assets/cv/Maicon_Reis_CV_PT.pdf" download data-i18n="nav.resume" data-i18n-attr="href:contact.resumeHref">Currículo</a></li>
         </ul>
 
         <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-attr="aria-label:a11y.langGroup">
@@ -137,7 +138,7 @@
           <article class="stack-group">
             <h3 class="stack-group__title" data-i18n="stack.data">Dados</h3>
             <ul class="tag-list">
-              <li class="tag">PostgreSQL</li><li class="tag">Redis</li><li class="tag">SQL</li>
+              <li class="tag">PostgreSQL</li><li class="tag">Redis</li><li class="tag">SQL</li><li class="tag">Supabase</li><li class="tag">Row Level Security</li>
             </ul>
           </article>
           <article class="stack-group">
@@ -149,7 +150,7 @@
           <article class="stack-group">
             <h3 class="stack-group__title" data-i18n="stack.devops">DevOps</h3>
             <ul class="tag-list">
-              <li class="tag">Docker</li><li class="tag">Kamal</li><li class="tag">GitHub Actions</li><li class="tag">Git</li>
+              <li class="tag">Docker</li><li class="tag">Kamal</li><li class="tag">GitHub Actions</li><li class="tag">Git</li><li class="tag">Cloudflare Pages</li><li class="tag">DNS</li>
             </ul>
           </article>
           <article class="stack-group">
@@ -249,11 +250,16 @@
           </article>
 
           <article class="project-card project-card--compact" aria-labelledby="proj-graos">
-            <p class="project-card__category" data-i18n="graos.category">Solução comercial</p>
+            <p class="project-card__category" data-i18n="graos.category">Projeto para cliente · Entregue e em uso</p>
             <h4 class="project-card__title" id="proj-graos">Grãos de Café</h4>
-            <p class="project-card__summary" data-i18n="graos.summary">Desenvolvimento de uma solução comercial composta por cardápio digital e painel administrativo.</p>
+            <p class="project-card__summary" data-i18n="graos.summary">Cardápio digital em produção, acessado por QR Code, com painel administrativo em que a cliente gerencia sozinha 146 produtos em 21 categorias, com alterações no ar sem novo deploy. Banco PostgreSQL (Supabase) com Row Level Security validada por testes, versão de impressão A4 gerada a partir dos dados e testes end-to-end em Selenium.</p>
             <ul class="project-card__links">
-              <li><span class="pending" data-i18n="projects.pendingStackUrl">[PENDENTE] Stack e URL pública</span></li>
+              <li>
+                <a class="link-arrow" href="https://graosdecafe.umermo.com.br" target="_blank" rel="noopener noreferrer">
+                  <span data-i18n="graos.link">Ver cardápio publicado</span><span class="visually-hidden" data-i18n="a11y.newTab"> (abre em nova aba)</span>
+                  <svg class="icon icon--sm" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                </a>
+              </li>
             </ul>
           </article>
         </div>
@@ -330,10 +336,11 @@
             </a>
           </li>
           <li>
-            <span class="contact-link contact-link--pending">
+            <!-- O href acompanha o idioma selecionado (data-i18n-attr); sem JS, baixa a versão PT. -->
+            <a class="contact-link" href="assets/cv/Maicon_Reis_CV_PT.pdf" download data-i18n-attr="href:contact.resumeHref">
               <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 14h6M9 17h4"/></svg>
-              <span><span data-i18n="contact.resume">Currículo</span> <span class="pending" data-i18n="contact.resumePending">[PENDENTE] PDF revisado</span></span>
-            </span>
+              <span><span data-i18n="contact.resume">Currículo</span> <span class="contact-link__meta" data-i18n="contact.resumeMeta">PDF · Português</span></span>
+            </a>
           </li>
         </ul>
       </div>

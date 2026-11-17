@@ -30,7 +30,8 @@ js/
   interactions.js   animações de entrada ao rolar (desligadas com prefers-reduced-motion)
 assets/
   fonts/            Inter variável (latino, woff2) + licença SIL OFL
-  images/, cv/      imagens e PDFs de currículo (vazios até receber material autorizado)
+  images/projects/  capturas autorizadas dos projetos (WebP 720w/1440w)
+  cv/               currículos PT/EN em PDF (o link acompanha o idioma do site)
 404.html            página de erro (caminhos absolutos; servida pelo Cloudflare Pages)
 _headers            cabeçalhos HTTP: CSP, frame, permissions (Cloudflare Pages)
 favicon.svg
@@ -50,7 +51,7 @@ robots.txt
 
 - [x] Fase A — layout estático e conteúdo PT
 - [x] Fase B — dicionários PT/EN e troca de idioma
-- [ ] Fase C — interações, acessibilidade, mídia e PDFs (feito: menu, teclado, animações, revisão de confidencialidade; falta: capturas autorizadas e PDFs dos currículos)
+- [x] Fase C — interações, acessibilidade, mídia e PDFs
 - [ ] Fase D — publicação no Cloudflare Pages
 
 ## Obrigatório antes da publicação definitiva (Fase D)

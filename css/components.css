@@ -154,13 +154,6 @@ html .reveal {
   line-height: 1.6;
 }
 
-/* ---------- Placeholders ---------- */
-.pending {
-  font-family: var(--font-mono);
-  font-size: var(--fs-xs);
-  color: var(--color-muted);
-}
-
 /* Imagem real de projeto (capturas autorizadas, proporção 3:2) */
 .project-card__media {
   margin: 0;
@@ -183,6 +176,8 @@ html .reveal {
 }
 
 .project-card__credit a {
+  display: inline-block;
+  padding-block: 4px; /* área de toque de 24px */
   color: var(--color-muted);
   text-underline-offset: 2px;
 }

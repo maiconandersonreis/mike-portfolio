@@ -30,6 +30,7 @@ const pt = {
   'nav.projects': 'Projetos',
   'nav.experience': 'Experiência',
   'nav.contact': 'Contato',
+  'nav.resume': 'Currículo',
 
   // Hero
   'hero.eyebrow': 'OLÁ, EU SOU MAICON REIS',
@@ -62,7 +63,6 @@ const pt = {
   // Projetos
   'projects.title': 'Projetos',
   'projects.additional': 'Projetos complementares',
-  'projects.pendingStackUrl': '[PENDENTE] Stack e URL pública',
 
   'metropole.category': 'Projeto próprio · Portal de notícias e CMS editorial',
   'metropole.imageAlt': 'Capturas do Jornal Metrópole 085: página inicial com matéria em destaque, painel administrativo e página do artigo.',
@@ -80,8 +80,9 @@ const pt = {
   'health.category': 'Experiência profissional',
   'health.summary': 'Contribuições para uma plataforma SaaS multi-tenant de saúde pública, com foco em confiabilidade, desempenho, manutenção e funcionalidades em tempo real.',
 
-  'graos.category': 'Solução comercial',
-  'graos.summary': 'Desenvolvimento de uma solução comercial composta por cardápio digital e painel administrativo.',
+  'graos.category': 'Projeto para cliente · Entregue e em uso',
+  'graos.summary': 'Cardápio digital em produção, acessado por QR Code, com painel administrativo em que a cliente gerencia sozinha 146 produtos em 21 categorias, com alterações no ar sem novo deploy. Banco PostgreSQL (Supabase) com Row Level Security validada por testes, versão de impressão A4 gerada a partir dos dados e testes end-to-end em Selenium.',
+  'graos.link': 'Ver cardápio publicado',
 
   // Experiência
   'experience.title': 'Experiência',
@@ -106,7 +107,8 @@ const pt = {
   'contact.title': 'Contato',
   'contact.lead': 'Vamos conversar sobre oportunidades e projetos de desenvolvimento de software.',
   'contact.resume': 'Currículo',
-  'contact.resumePending': '[PENDENTE] PDF revisado',
+  'contact.resumeMeta': 'PDF · Português',
+  'contact.resumeHref': 'assets/cv/Maicon_Reis_CV_PT.pdf',
 
   // Rodapé
   'footer.email': 'E-mail',
@@ -131,6 +133,7 @@ const en = {
   'nav.projects': 'Projects',
   'nav.experience': 'Experience',
   'nav.contact': 'Contact',
+  'nav.resume': 'Résumé',
 
   'hero.eyebrow': "HI, I'M MAICON REIS",
   'hero.title1': 'Building software.',
@@ -159,7 +162,6 @@ const en = {
 
   'projects.title': 'Projects',
   'projects.additional': 'Additional projects',
-  'projects.pendingStackUrl': '[PENDING] Stack and public URL',
 
   'metropole.category': 'Personal project · News portal and editorial CMS',
   'metropole.imageAlt': 'Screenshots of Jornal Metrópole 085: home page with the featured story, admin panel and article page.',
@@ -177,8 +179,9 @@ const en = {
   'health.category': 'Professional experience',
   'health.summary': 'Contributions to a multi-tenant public healthcare SaaS platform, focusing on reliability, performance, maintenance, and real-time features.',
 
-  'graos.category': 'Commercial solution',
-  'graos.summary': 'Development of a commercial solution featuring a digital menu and an administrative panel.',
+  'graos.category': 'Client project · Delivered and in use',
+  'graos.summary': 'Digital menu in production, accessed via QR code, with an admin panel where the client independently manages 146 products across 21 categories, with changes going live without a new deploy. PostgreSQL database (Supabase) with Row Level Security validated by tests, an A4 print version generated from the data, and end-to-end tests with Selenium.',
+  'graos.link': 'View live menu',
 
   'experience.title': 'Experience',
   'nobe.start': 'Mar 2025',
@@ -200,7 +203,8 @@ const en = {
   'contact.title': 'Contact',
   'contact.lead': "Let's talk about software development opportunities and projects.",
   'contact.resume': 'Résumé',
-  'contact.resumePending': '[PENDING] Reviewed PDF',
+  'contact.resumeMeta': 'PDF · English',
+  'contact.resumeHref': 'assets/cv/Maicon_Reis_CV_EN.pdf',
 
   'footer.email': 'Email',
 };
