@@ -307,9 +307,20 @@ section[id] {
 }
 
 .contact__list {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--space-3);
   margin-top: var(--space-6);
+}
+
+/* Mobile: um card por linha. A partir de 600px, cada card ocupa a largura do seu conteúdo. */
+.contact__list > li {
+  flex: 1 1 100%;
+  min-width: 0;
+}
+
+.contact__list .contact-link {
+  height: 100%;
 }
 
 .contact-link {
@@ -322,7 +333,7 @@ section[id] {
   border-radius: var(--radius-md);
   background: var(--color-card);
   text-decoration: none;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
   transition: border-color var(--transition), background-color var(--transition);
 }
 

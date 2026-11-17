@@ -1,5 +1,6 @@
-// Fase A: apenas o comportamento mínimo para a página ser navegável.
-// Troca de idioma (i18n.js/content.js) entra na Fase B; refinamentos de interação na Fase C.
+import { initI18n } from './i18n.js';
+
+initI18n();
 
 const header = document.querySelector('[data-header]');
 const toggle = document.querySelector('[data-nav-toggle]');

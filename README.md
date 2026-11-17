@@ -16,7 +16,7 @@ python3 -m http.server 8000
 ## Estrutura
 
 ```text
-index.html          página única (conteúdo PT na Fase A)
+index.html          página única (texto PT inline como padrão)
 css/
   reset.css         normalização mínima
   variables.css     tokens de cor, tipografia, espaçamento
@@ -24,18 +24,27 @@ css/
   sections.css      hero, sobre, stack, projetos, experiência, contato, footer
   responsive.css    breakpoints (600px, 900px) e prefers-reduced-motion
 js/
-  main.js           menu mobile, estado do header no scroll, ano do footer
+  main.js           ponto de entrada: i18n, menu mobile, header no scroll, ano do footer
+  i18n.js           detecção, troca e persistência de idioma (sem innerHTML)
+  content.js        dicionários pt/en (mesmas chaves)
 assets/             imagens, ícones e PDFs de currículo (vazios até receber material autorizado)
 favicon.svg
 robots.txt
 ```
 
-`js/i18n.js` e `js/content.js` entram na Fase B (PT/EN); `sitemap.xml`, canonical e OG final na Fase D, após o domínio.
+`sitemap.xml`, canonical e OG final na Fase D, após o domínio.
+
+## Idiomas
+
+- Elementos traduzíveis usam `data-i18n="chave"` (texto) ou `data-i18n-attr="aria-label:chave"` (atributos).
+- O HTML traz o texto em português, que vale como padrão sem JavaScript.
+- Ordem de escolha: idioma salvo no `localStorage` → preferência do navegador → `pt`.
+- Idioma trocado no cliente, em URL única. Rotas `/pt/` e `/en/` com `hreflang` podem ser avaliadas no futuro para SEO.
 
 ## Status
 
 - [x] Fase A — layout estático e conteúdo PT
-- [ ] Fase B — dicionários PT/EN e troca de idioma
+- [x] Fase B — dicionários PT/EN e troca de idioma
 - [ ] Fase C — interações, acessibilidade, mídia e PDFs
 - [ ] Fase D — publicação no Cloudflare Pages
 

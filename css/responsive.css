@@ -13,8 +13,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .contact__list {
-    grid-template-columns: repeat(2, 1fr);
+  .contact__list > li {
+    flex: 1 1 auto;
   }
 }
 
@@ -93,10 +93,6 @@
 
   .education {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .contact__list {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
 
