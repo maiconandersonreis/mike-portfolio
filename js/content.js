@@ -62,13 +62,12 @@ const pt = {
   // Projetos
   'projects.title': 'Projetos',
   'projects.additional': 'Projetos complementares',
-  'projects.pendingUrl': '[PENDENTE] URL pública',
-  'projects.pendingRepo': '[PENDENTE] Repositório autorizado',
   'projects.pendingStackUrl': '[PENDENTE] Stack e URL pública',
 
   'metropole.category': 'Projeto próprio · Portal de notícias e CMS editorial',
   'metropole.imageAlt': 'Capturas do Jornal Metrópole 085: página inicial com matéria em destaque, painel administrativo e página do artigo.',
   'metropole.photoCredit': 'Foto da matéria:',
+  'metropole.repoLink': 'Ver código no GitHub',
   'metropole.summary': 'Portal de notícias com CMS editorial desenvolvido com Ruby on Rails. Reúne uma aplicação pública e uma área administrativa, com foco em organização de conteúdo, segurança, testes automatizados e infraestrutura de publicação.',
 
   'frontera.category': 'Projeto para cliente · Desenvolvimento independente · Entregue e publicado',
@@ -160,13 +159,12 @@ const en = {
 
   'projects.title': 'Projects',
   'projects.additional': 'Additional projects',
-  'projects.pendingUrl': '[PENDING] Public URL',
-  'projects.pendingRepo': '[PENDING] Authorized repository',
   'projects.pendingStackUrl': '[PENDING] Stack and public URL',
 
   'metropole.category': 'Personal project · News portal and editorial CMS',
   'metropole.imageAlt': 'Screenshots of Jornal Metrópole 085: home page with the featured story, admin panel and article page.',
   'metropole.photoCredit': 'Article photo:',
+  'metropole.repoLink': 'View code on GitHub',
   'metropole.summary': 'A news portal with an editorial CMS built with Ruby on Rails. The project combines a public-facing website and an administrative interface, with a focus on content management, security, automated testing, and deployment infrastructure.',
 
   'frontera.category': 'Client project · Independently developed · Delivered and live',
