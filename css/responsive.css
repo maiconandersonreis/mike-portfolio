@@ -107,7 +107,8 @@
     padding: var(--space-6);
   }
 
-  .project-card--featured:nth-child(even) .media-placeholder {
+  .project-card--featured:nth-child(even) .media-placeholder,
+  .project-card--featured:nth-child(even) .project-card__media {
     order: 2;
   }
 

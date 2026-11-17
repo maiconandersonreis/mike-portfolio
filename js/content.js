@@ -64,7 +64,6 @@ const pt = {
   'projects.title': 'Projetos',
   'projects.additional': 'Projetos complementares',
   'projects.pendingShot': '[PENDENTE] Captura real autorizada',
-  'projects.pendingPublicShot': '[PENDENTE] Captura de área pública autorizada',
   'projects.pendingUrl': '[PENDENTE] URL pública',
   'projects.pendingRepo': '[PENDENTE] Repositório autorizado',
   'projects.pendingStackUrl': '[PENDENTE] Stack e URL pública',
@@ -75,6 +74,7 @@ const pt = {
   'frontera.category': 'Projeto para cliente · Desenvolvimento independente · Entregue e publicado',
   'frontera.summary': 'Plataforma digital desenvolvida integralmente de forma independente para apoiar o planejamento de compras na região de fronteira entre Brasil e Paraguai. Implementada com tecnologias web nativas e integração com APIs, está publicada e funcionando em produção.',
   'frontera.vanillaJs': 'JavaScript puro',
+  'frontera.imageAlt': 'Capturas da área pública do Frontera Paraguay: página inicial e Assistente de Pagamento & Câmbio.',
   'frontera.note': 'Alguns detalhes técnicos e funcionais são omitidos por obrigações de confidencialidade.',
   'frontera.link': 'Ver site publicado',
 
@@ -162,7 +162,6 @@ const en = {
   'projects.title': 'Projects',
   'projects.additional': 'Additional projects',
   'projects.pendingShot': '[PENDING] Authorized real screenshot',
-  'projects.pendingPublicShot': '[PENDING] Authorized screenshot of public area',
   'projects.pendingUrl': '[PENDING] Public URL',
   'projects.pendingRepo': '[PENDING] Authorized repository',
   'projects.pendingStackUrl': '[PENDING] Stack and public URL',
@@ -173,6 +172,7 @@ const en = {
   'frontera.category': 'Client project · Independently developed · Delivered and live',
   'frontera.summary': 'A digital platform independently developed end-to-end to support shopping planning in the border region between Brazil and Paraguay. Built with native web technologies and API integrations, the platform is publicly deployed and running in production.',
   'frontera.vanillaJs': 'Vanilla JavaScript',
+  'frontera.imageAlt': 'Screenshots of the public area of Frontera Paraguay: home page and the Payment & Exchange Assistant.',
   'frontera.note': 'Some functional and technical details are omitted due to confidentiality obligations.',
   'frontera.link': 'Visit live website',
 
