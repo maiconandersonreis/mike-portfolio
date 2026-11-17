@@ -1,0 +1,50 @@
+:root {
+  /* Cores — especificação, seção 2 */
+  --color-bg: #0D0D12;
+  --color-surface: #15151D;
+  --color-card: #1B1A24;
+  --color-accent: #A78BFA;
+  --color-text: #F4F1FA;
+  --color-muted: #9693A3;
+  --color-border: #302D3B;
+
+  /* Derivados */
+  --color-accent-soft: rgba(167, 139, 250, 0.12);
+  --color-accent-border: rgba(167, 139, 250, 0.35);
+  --color-on-accent: #0D0D12;
+  --color-success: #6EE7B7;
+
+  /* Tipografia — fontes do sistema até a escolha/auto-hospedagem final */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace;
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.375rem;
+  --fs-xl: clamp(1.75rem, 1.3rem + 2vw, 2.5rem);
+  --fs-hero: clamp(2.25rem, 1.4rem + 4.2vw, 4.25rem);
+
+  /* Espaçamento */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+
+  /* Layout */
+  --container-max: 1160px;
+  --gutter: 1rem;
+  --header-h: 4rem;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --transition: 180ms ease;
+}

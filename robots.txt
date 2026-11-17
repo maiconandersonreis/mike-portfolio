@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Sitemap: adicionar após definir o domínio definitivo (Fase D).
