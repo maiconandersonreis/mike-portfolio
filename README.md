@@ -28,7 +28,11 @@ js/
   i18n.js           detecção, troca e persistência de idioma (sem innerHTML)
   content.js        dicionários pt/en (mesmas chaves)
   interactions.js   animações de entrada ao rolar (desligadas com prefers-reduced-motion)
-assets/             imagens, ícones e PDFs de currículo (vazios até receber material autorizado)
+assets/
+  fonts/            Inter variável (latino, woff2) + licença SIL OFL
+  images/, cv/      imagens e PDFs de currículo (vazios até receber material autorizado)
+404.html            página de erro (caminhos absolutos; servida pelo Cloudflare Pages)
+_headers            cabeçalhos HTTP: CSP, frame, permissions (Cloudflare Pages)
 favicon.svg
 robots.txt
 ```
@@ -53,6 +57,16 @@ robots.txt
 
 - [ ] **Remover** `<meta name="robots" content="noindex, follow">` do `index.html`. Ele foi adicionado temporariamente para que a URL de pré-publicação não seja indexada enquanto houver placeholders (auditoria, item AUD-003).
 - [ ] Adicionar `Sitemap:` ao `robots.txt`, `sitemap.xml`, canonical e Open Graph final com o domínio definitivo.
+
+## Cabeçalhos e CSP
+
+O `_headers` define o Content-Security-Policy. O único script inline (no `<head>` do `index.html`) é liberado pelo hash. **Se esse script for alterado, recalcule o hash** e atualize o `_headers`:
+
+```bash
+python3 -c "import re,hashlib,base64;s=re.search(r'<script>(.*?)</script>',open('index.html').read(),re.S).group(1);print('sha256-'+base64.b64encode(hashlib.sha256(s.encode()).digest()).decode())"
+```
+
+O CSP não permite `style="..."` no HTML: use classes.
 
 ## Navegação sem JavaScript
 

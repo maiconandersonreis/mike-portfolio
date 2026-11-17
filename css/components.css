@@ -123,7 +123,7 @@ html .reveal {
 }
 
 .btn--primary:hover {
-  background: #B9A2FB;
+  background: var(--color-accent-hover);
 }
 
 .btn--ghost {
@@ -172,7 +172,7 @@ html .reveal {
     repeating-linear-gradient(
       135deg,
       transparent 0 12px,
-      rgba(255, 255, 255, 0.015) 12px 24px
+      var(--color-placeholder-stripe) 12px 24px
     ),
     var(--color-surface);
   text-align: center;
@@ -211,7 +211,7 @@ html .reveal {
 }
 
 .site-header.is-scrolled {
-  background: rgba(13, 13, 18, 0.88);
+  background: var(--color-header-bg);
   border-bottom-color: var(--color-border);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);

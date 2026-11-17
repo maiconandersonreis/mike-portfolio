@@ -9,6 +9,24 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* AUD-012: último card sozinho na linha ocupa a linha inteira */
+  .stack-group:last-child:nth-child(2n + 1) {
+    grid-column: 1 / -1;
+  }
+
+  .hero__headline-role {
+    display: inline;
+    white-space: nowrap;
+  }
+
+  .hero__headline-sep {
+    display: inline;
+  }
+
+  .hero__actions {
+    margin-top: var(--space-6);
+  }
+
   .projects-secondary {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -72,6 +90,14 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .stack-group:last-child:nth-child(2n + 1) {
+    grid-column: auto;
+  }
+
+  .stack-group:last-child:nth-child(3n + 1) {
+    grid-column: 1 / -1;
+  }
+
   /* Projetos principais: cards largos com mídia ao lado */
   .project-card--featured {
     display: grid;
@@ -97,6 +123,13 @@
 
   .education {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1199.98px) {
+  .contact__list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

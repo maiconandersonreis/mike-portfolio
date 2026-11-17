@@ -36,7 +36,6 @@ const pt = {
   'hero.eyebrow': 'OLÁ, EU SOU MAICON REIS',
   'hero.title1': 'Desenvolvendo software.',
   'hero.title2': 'Resolvendo problemas.',
-  'hero.headline': 'Ruby on Rails Developer | Full Stack Engineer',
   'hero.description': 'Desenvolvedor Full Stack com foco em Ruby on Rails, experiência em aplicações web de produção e desenvolvimento de soluções orientadas a problemas reais.',
   'hero.availability': 'Aberto a oportunidades remotas',
   'hero.location': 'Fortaleza, Brasil',
@@ -87,11 +86,13 @@ const pt = {
 
   // Experiência
   'experience.title': 'Experiência',
-  'nobe.dates': 'Mar 2025 – Jul 2026',
+  'nobe.start': 'mar/2025',
+  'nobe.end': 'jul/2026',
   'nobe.role': 'Desenvolvedor Full Stack',
   'nobe.badge': 'PJ',
   'nobe.desc': 'Atuação no desenvolvimento e manutenção de uma plataforma SaaS de saúde pública, com foco em resolução de problemas críticos, otimização de consultas SQL, estratégias de cache, funcionalidades em tempo real, testes automatizados e confiabilidade em produção.',
-  'corpvs.dates': 'Mar 2024 – Mar 2025',
+  'corpvs.start': 'mar/2024',
+  'corpvs.end': 'mar/2025',
   'corpvs.role': 'Manutenção de sistemas de segurança',
   'corpvs.desc': 'Atuação na manutenção de sistemas eletrônicos de segurança, com responsabilidades de coordenação de rotinas preventivas e corretivas, diagnóstico técnico e orientação de novos profissionais.',
 
@@ -136,7 +137,6 @@ const en = {
   'hero.eyebrow': "HI, I'M MAICON REIS",
   'hero.title1': 'Building software.',
   'hero.title2': 'Solving problems.',
-  'hero.headline': 'Ruby on Rails Developer | Full Stack Engineer',
   'hero.description': 'Full Stack Developer focused on Ruby on Rails, with experience building and maintaining production web applications and delivering solutions to real-world problems.',
   'hero.availability': 'Open to remote opportunities',
   'hero.location': 'Fortaleza, Brazil',
@@ -183,11 +183,13 @@ const en = {
   'graos.summary': 'Development of a commercial solution featuring a digital menu and an administrative panel.',
 
   'experience.title': 'Experience',
-  'nobe.dates': 'Mar 2025 – Jul 2026',
+  'nobe.start': 'Mar 2025',
+  'nobe.end': 'Jul 2026',
   'nobe.role': 'Full Stack Developer',
   'nobe.badge': 'Contractor',
   'nobe.desc': 'Worked on the development and maintenance of a public healthcare SaaS platform, focusing on critical bug fixes, SQL query optimization, caching strategies, real-time features, automated testing, and production reliability.',
-  'corpvs.dates': 'Mar 2024 – Mar 2025',
+  'corpvs.start': 'Mar 2024',
+  'corpvs.end': 'Mar 2025',
   'corpvs.role': 'Security Systems Maintenance',
   'corpvs.desc': 'Worked with electronic security systems maintenance, coordinating preventive and corrective routines, troubleshooting technical issues, and supporting the training of new team members.',
 

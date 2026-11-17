@@ -20,6 +20,12 @@
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
+  <!-- Pré-carregamentos: fonte do título (LCP) e módulos importados dinamicamente pelo main.js (AUD-007/008) -->
+  <link rel="preload" href="assets/fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="modulepreload" href="js/i18n.js">
+  <link rel="modulepreload" href="js/content.js">
+  <link rel="modulepreload" href="js/interactions.js">
+
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/components.css">
@@ -73,7 +79,7 @@
       <div class="container hero__inner">
         <p class="eyebrow" data-i18n="hero.eyebrow">OLÁ, EU SOU MAICON REIS</p>
         <h1 class="hero__title" id="hero-title"><span data-i18n="hero.title1">Desenvolvendo software.</span> <span class="text-accent" data-i18n="hero.title2">Resolvendo problemas.</span></h1>
-        <p class="hero__headline" lang="en" data-i18n="hero.headline">Ruby on Rails Developer | Full Stack Engineer</p>
+        <p class="hero__headline" lang="en"><span class="hero__headline-role">Ruby on Rails Developer</span><span class="hero__headline-sep" aria-hidden="true"> | </span> <span class="hero__headline-role">Full Stack Engineer</span></p>
         <p class="hero__description" data-i18n="hero.description">Desenvolvedor Full Stack com foco em Ruby on Rails, experiência em aplicações web de produção e desenvolvimento de soluções orientadas a problemas reais.</p>
 
         <ul class="hero__meta" aria-label="Disponibilidade e localização" data-i18n-attr="aria-label:a11y.heroMeta">
@@ -246,7 +252,7 @@
         <ol class="timeline">
           <li class="timeline__item">
             <article>
-              <p class="timeline__date" data-i18n="nobe.dates">Mar 2025 – Jul 2026</p>
+              <p class="timeline__date"><time datetime="2025-03" data-i18n="nobe.start">mar/2025</time> – <time datetime="2026-07" data-i18n="nobe.end">jul/2026</time></p>
               <h3 class="timeline__role" data-i18n="nobe.role">Desenvolvedor Full Stack</h3>
               <p class="timeline__org">Nobe Sistemas <span class="timeline__badge" data-i18n="nobe.badge">PJ</span></p>
               <p class="timeline__desc" data-i18n="nobe.desc">Atuação no desenvolvimento e manutenção de uma plataforma SaaS de saúde pública, com foco em resolução de problemas críticos, otimização de consultas SQL, estratégias de cache, funcionalidades em tempo real, testes automatizados e confiabilidade em produção.</p>
@@ -254,7 +260,7 @@
           </li>
           <li class="timeline__item">
             <article>
-              <p class="timeline__date" data-i18n="corpvs.dates">Mar 2024 – Mar 2025</p>
+              <p class="timeline__date"><time datetime="2024-03" data-i18n="corpvs.start">mar/2024</time> – <time datetime="2025-03" data-i18n="corpvs.end">mar/2025</time></p>
               <h3 class="timeline__role" data-i18n="corpvs.role">Manutenção de sistemas de segurança</h3>
               <p class="timeline__org">Corpvs Eletrônica</p>
               <p class="timeline__desc" data-i18n="corpvs.desc">Atuação na manutenção de sistemas eletrônicos de segurança, com responsabilidades de coordenação de rotinas preventivas e corretivas, diagnóstico técnico e orientação de novos profissionais.</p>

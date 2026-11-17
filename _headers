@@ -1,0 +1,16 @@
+# Cabeçalhos HTTP do Cloudflare Pages (este arquivo não é publicado como página).
+#
+# CSP: o único script inline permitido é o do <head> do index.html, liberado pelo hash SHA-256.
+# QUALQUER alteração nesse script exige recalcular o hash (comando no README), senão ele é bloqueado
+# e o menu mobile cai no modo sem JS.
+
+/*
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-PE08aNCxHr896Js2uBYsc+kGKalHexxTsCK/AY8O/E0='; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
+
+# Documentação do repositório: acessível pela URL, mas fora dos buscadores (AUD-017).
+/README.md
+  X-Robots-Tag: noindex
