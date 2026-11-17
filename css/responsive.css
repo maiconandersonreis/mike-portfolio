@@ -33,6 +33,10 @@
     padding-bottom: var(--space-9);
   }
 
+  .no-js .hero {
+    padding-top: var(--space-8);
+  }
+
   /* Navegação horizontal no desktop */
   .nav-toggle {
     display: none;

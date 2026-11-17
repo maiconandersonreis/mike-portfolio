@@ -58,6 +58,10 @@ body {
   transform: translateY(0);
 }
 
+main[tabindex="-1"]:focus {
+  outline: none;
+}
+
 .text-accent {
   color: var(--color-accent);
 }
@@ -268,8 +272,23 @@ body {
   display: flex;
 }
 
-/* Sem JS, a navegação permanece acessível */
-.no-js .nav-toggle { display: none; }
+/* Sem JS (ou se o JS principal falhar), a navegação permanece visível e acessível (AUD-001).
+   O cabeçalho sai do modo fixo para não cobrir o conteúdo; os links quebram em linhas. */
+.no-js .site-header {
+  position: static;
+  height: auto;
+}
+
+.no-js .site-header__inner {
+  flex-wrap: wrap;
+  padding-block: var(--space-3);
+}
+
+.no-js .nav-toggle,
+.no-js .lang-switch {
+  display: none; /* a troca de idioma depende de JS */
+}
+
 .no-js .site-nav {
   position: static;
   display: flex;
@@ -279,6 +298,11 @@ body {
   padding: 0;
   background: none;
   border: 0;
+}
+
+.no-js .site-nav__list {
+  flex-direction: row;
+  gap: 0 var(--space-1);
 }
 
 .site-nav__list {

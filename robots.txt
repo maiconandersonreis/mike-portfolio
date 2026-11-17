@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# O rastreamento continua liberado para que os robôs leiam o <meta name="robots" content="noindex, follow">
+# do index.html (temporário até a Fase D). Bloquear aqui impediria a leitura do noindex.
+
 # Sitemap: adicionar após definir o domínio definitivo (Fase D).

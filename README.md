@@ -48,4 +48,13 @@ robots.txt
 - [ ] Fase C — interações, acessibilidade, mídia e PDFs
 - [ ] Fase D — publicação no Cloudflare Pages
 
+## Obrigatório antes da publicação definitiva (Fase D)
+
+- [ ] **Remover** `<meta name="robots" content="noindex, follow">` do `index.html`. Ele foi adicionado temporariamente para que a URL de pré-publicação não seja indexada enquanto houver placeholders (auditoria, item AUD-003).
+- [ ] Adicionar `Sitemap:` ao `robots.txt`, `sitemap.xml`, canonical e Open Graph final com o domínio definitivo.
+
+## Navegação sem JavaScript
+
+O `<html>` começa com a classe `no-js`, e o CSS correspondente exibe os links do menu em linha, com cabeçalho estático. Um script inline remove a classe na primeira pintura. Se `js/main.js` não marcar `nav-ready` em 4 s (falha de rede ou erro), a classe volta e os links reaparecem. O i18n é carregado depois do menu, por `import()` dinâmico, então uma falha nas traduções não afeta a navegação.
+
 Placeholders marcados com `[PENDENTE]` indicam conteúdo que depende de confirmação (ver seção 9 da especificação).

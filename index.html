@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Maicon Reis — Ruby on Rails Developer | Full Stack Engineer</title>
   <meta name="description" content="Desenvolvedor Full Stack com foco em Ruby on Rails, experiência em aplicações web de produção e desenvolvimento de soluções orientadas a problemas reais.">
+  <!-- TEMPORÁRIO (AUD-003): impede indexação enquanto houver placeholders.
+       REMOÇÃO OBRIGATÓRIA na Fase D, antes da publicação definitiva. -->
+  <meta name="robots" content="noindex, follow">
   <meta name="color-scheme" content="dark">
   <meta name="theme-color" content="#0D0D12">
 
@@ -23,7 +26,16 @@
   <link rel="stylesheet" href="css/sections.css">
   <link rel="stylesheet" href="css/responsive.css">
 
-  <script>document.documentElement.classList.remove("no-js");</script>
+  <script>
+    // Remove "no-js" já na primeira pintura. Se js/main.js não inicializar a navegação
+    // (falha de rede ou erro), volta ao modo sem JS, que mantém os links visíveis (AUD-009).
+    (function (root) {
+      root.classList.remove("no-js");
+      setTimeout(function () {
+        if (!root.classList.contains("nav-ready")) root.classList.add("no-js");
+      }, 4000);
+    })(document.documentElement);
+  </script>
   <script type="module" src="js/main.js"></script>
 </head>
 <body>
@@ -48,20 +60,20 @@
         </ul>
 
         <div class="lang-switch" role="group" aria-label="Idioma" data-i18n-attr="aria-label:a11y.langGroup">
-          <button type="button" class="lang-switch__btn" data-lang="pt" aria-pressed="true" lang="pt-BR" title="Português" data-i18n-attr="title:a11y.langPt">PT</button>
-          <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false" lang="en" title="Inglês" data-i18n-attr="title:a11y.langEn">EN</button>
+          <button type="button" class="lang-switch__btn" data-lang="pt" aria-pressed="true" lang="pt-BR" title="Português"><span aria-hidden="true">PT</span><span class="visually-hidden">Português</span></button>
+          <button type="button" class="lang-switch__btn" data-lang="en" aria-pressed="false" lang="en" title="English"><span aria-hidden="true">EN</span><span class="visually-hidden">English</span></button>
         </div>
       </nav>
     </div>
   </header>
 
-  <main id="conteudo">
+  <main id="conteudo" tabindex="-1">
     <!-- HERO -->
     <section class="hero" id="inicio" aria-labelledby="hero-title">
       <div class="container hero__inner">
         <p class="eyebrow" data-i18n="hero.eyebrow">OLÁ, EU SOU MAICON REIS</p>
         <h1 class="hero__title" id="hero-title"><span data-i18n="hero.title1">Desenvolvendo software.</span> <span class="text-accent" data-i18n="hero.title2">Resolvendo problemas.</span></h1>
-        <p class="hero__headline" data-i18n="hero.headline">Ruby on Rails Developer | Full Stack Engineer</p>
+        <p class="hero__headline" lang="en" data-i18n="hero.headline">Ruby on Rails Developer | Full Stack Engineer</p>
         <p class="hero__description" data-i18n="hero.description">Desenvolvedor Full Stack com foco em Ruby on Rails, experiência em aplicações web de produção e desenvolvimento de soluções orientadas a problemas reais.</p>
 
         <ul class="hero__meta" aria-label="Disponibilidade e localização" data-i18n-attr="aria-label:a11y.heroMeta">

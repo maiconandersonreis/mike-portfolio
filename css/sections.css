@@ -3,6 +3,10 @@ section[id] {
   scroll-margin-top: var(--header-h);
 }
 
+.no-js section[id] {
+  scroll-margin-top: 0;
+}
+
 .section {
   padding-block: var(--space-8);
 }
@@ -51,6 +55,10 @@ section[id] {
 .hero {
   padding-top: calc(var(--header-h) + var(--space-8));
   padding-bottom: var(--space-8);
+}
+
+.no-js .hero {
+  padding-top: var(--space-7);
 }
 
 .hero__inner {
