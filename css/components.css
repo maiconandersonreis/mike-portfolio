@@ -62,6 +62,26 @@ main[tabindex="-1"]:focus {
   outline: none;
 }
 
+/* ---------- Animação de entrada (classe aplicada só por js/interactions.js) ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+/* Especificidade maior que a de .project-card (sections.css), que também define transition.
+   border-color mantém o hover dos cards. */
+html .reveal {
+  transition:
+    opacity 500ms ease var(--reveal-delay, 0ms),
+    transform 500ms ease var(--reveal-delay, 0ms),
+    border-color var(--transition);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
 .text-accent {
   color: var(--color-accent);
 }

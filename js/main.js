@@ -66,3 +66,8 @@ if (year) year.textContent = String(new Date().getFullYear());
 import('./i18n.js')
   .then(({ initI18n }) => initI18n())
   .catch((error) => console.error('[i18n] falha ao inicializar:', error));
+
+// Animações: opcionais; uma falha aqui não afeta navegação nem conteúdo.
+import('./interactions.js')
+  .then(({ initReveal }) => initReveal())
+  .catch((error) => console.error('[interactions] falha ao inicializar:', error));

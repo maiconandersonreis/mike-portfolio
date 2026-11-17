@@ -27,6 +27,7 @@ js/
   main.js           ponto de entrada: i18n, menu mobile, header no scroll, ano do footer
   i18n.js           detecção, troca e persistência de idioma (sem innerHTML)
   content.js        dicionários pt/en (mesmas chaves)
+  interactions.js   animações de entrada ao rolar (desligadas com prefers-reduced-motion)
 assets/             imagens, ícones e PDFs de currículo (vazios até receber material autorizado)
 favicon.svg
 robots.txt
@@ -45,7 +46,7 @@ robots.txt
 
 - [x] Fase A — layout estático e conteúdo PT
 - [x] Fase B — dicionários PT/EN e troca de idioma
-- [ ] Fase C — interações, acessibilidade, mídia e PDFs
+- [ ] Fase C — interações, acessibilidade, mídia e PDFs (feito: menu, teclado, animações, revisão de confidencialidade; falta: capturas autorizadas e PDFs dos currículos)
 - [ ] Fase D — publicação no Cloudflare Pages
 
 ## Obrigatório antes da publicação definitiva (Fase D)
