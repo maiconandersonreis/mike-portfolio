@@ -179,9 +179,19 @@
         <div class="projects-featured">
           <!-- Jornal Metrópole 085 -->
           <article class="project-card project-card--featured" aria-labelledby="proj-metropole">
-            <div class="media-placeholder" role="img" aria-label="Espaço reservado: captura de tela pendente" data-i18n-attr="aria-label:a11y.mediaPending">
-              <span class="media-placeholder__label" aria-hidden="true" data-i18n="projects.pendingShot">[PENDENTE] Captura real autorizada</span>
-            </div>
+            <figure class="project-card__media">
+              <img src="assets/images/projects/metropole-720.webp"
+                   srcset="assets/images/projects/metropole-720.webp 720w, assets/images/projects/metropole-1440.webp 1440w"
+                   sizes="(min-width: 1160px) 524px, (min-width: 900px) 46vw, calc(100vw - 80px)"
+                   width="1440" height="960" loading="lazy" decoding="async"
+                   alt="Capturas do Jornal Metrópole 085: página inicial com matéria em destaque, painel administrativo e página do artigo."
+                   data-i18n-attr="alt:metropole.imageAlt">
+              <figcaption class="project-card__credit">
+                <span data-i18n="metropole.photoCredit">Foto da matéria:</span> Jorge Andrade /
+                <a href="https://commons.wikimedia.org/wiki/File:Feira_da_Beira_Mar.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons<span class="visually-hidden" data-i18n="a11y.newTab"> (abre em nova aba)</span></a>,
+                <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0<span class="visually-hidden" data-i18n="a11y.newTab"> (abre em nova aba)</span></a>
+              </figcaption>
+            </figure>
             <div class="project-card__body">
               <p class="project-card__category" data-i18n="metropole.category">Projeto próprio · Portal de notícias e CMS editorial</p>
               <h3 class="project-card__title" id="proj-metropole">Jornal Metrópole 085</h3>

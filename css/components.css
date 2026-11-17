@@ -161,23 +161,6 @@ html .reveal {
   color: var(--color-muted);
 }
 
-.media-placeholder {
-  display: grid;
-  place-items: center;
-  aspect-ratio: 3 / 2; /* mesma proporção das imagens de projeto */
-  padding: var(--space-4);
-  border: 1px dashed var(--color-border);
-  border-radius: var(--radius-md);
-  background:
-    repeating-linear-gradient(
-      135deg,
-      transparent 0 12px,
-      var(--color-placeholder-stripe) 12px 24px
-    ),
-    var(--color-surface);
-  text-align: center;
-}
-
 /* Imagem real de projeto (capturas autorizadas, proporção 3:2) */
 .project-card__media {
   margin: 0;
@@ -192,10 +175,20 @@ html .reveal {
   height: auto;
 }
 
-.media-placeholder__label {
-  font-family: var(--font-mono);
+.project-card__credit {
+  padding: var(--space-2) var(--space-3);
+  border-top: 1px solid var(--color-border);
   font-size: var(--fs-xs);
   color: var(--color-muted);
+}
+
+.project-card__credit a {
+  color: var(--color-muted);
+  text-underline-offset: 2px;
+}
+
+.project-card__credit a:hover {
+  color: var(--color-text);
 }
 
 /* ---------- Links ---------- */
