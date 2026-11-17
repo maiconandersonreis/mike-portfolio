@@ -29,7 +29,7 @@ js/
   content.js        dicionários pt/en (mesmas chaves)
   interactions.js   animações de entrada ao rolar (desligadas com prefers-reduced-motion)
 assets/
-  fonts/            Inter variável (latino, woff2) + licença SIL OFL
+  fonts/            Inter e JetBrains Mono variáveis (latino, woff2) + licenças SIL OFL
   images/projects/  capturas autorizadas dos projetos (WebP 720w/1440w)
   cv/               currículos PT/EN em PDF (o link acompanha o idioma do site)
 404.html            página de erro (caminhos absolutos; servida pelo Cloudflare Pages)
